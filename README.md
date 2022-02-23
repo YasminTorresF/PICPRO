@@ -8,7 +8,7 @@ Projeto desenvolvido para o evento PicPro ministrado pelos instrutores da Kenzie
 ### Estrutura de arquivos
 
 - README.md
-- index.html
+- PICPRO.html
 - /assets
   - /img
   - /css

@@ -1,0 +1,243 @@
+body {
+    background-color: #4a8864;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 150px;
+}
+.cabeçalho {
+padding: 20px 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cabeçalho .container {
+    display: flex;
+    align-items: center;
+}
+
+.cabeçalho figure img{
+width: 100%;
+max-width: 140px;
+}
+
+.cabeçalho_logoPicpro {
+    border-right: 1px solid #fff;
+    margin-right: 15px;
+}
+.seçãoDetalhesConta {
+    color: #fff;
+    padding: 60px 0 30px;
+}
+.seçãoDetalhesConta_sobreusuário {
+display: flex;
+}
+.icone1 {
+    margin-right: 50px;
+    margin-left: 450px;
+    max-height: 50px;  
+}
+.seçãoDetalhesConta_sobreusuário p {
+    font-size: 18px;
+    margin-left: 10px;
+}
+.seçãoDetalhesConta_sobreusuário img {
+    width: 100%;
+    max-width: 50px;
+}
+.seçãoDetalhesConta_sobreusuário p strong {
+    display: block;
+    font-weight: bold;
+}
+.seçãoDetalhesConta_sobresaldo {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+    margin-top: 30px;
+}
+.visualizarsaldo{
+    display: flex;
+}
+.seçãoDetalhesConta_sobresaldo p {
+    font-size: 18px;
+    line-height: 22px;
+}
+.seçãoDetalhesConta_sobresaldo p strong{
+    margin-top: 10px;
+    display: block;
+    font-weight: 600;
+}
+.seçãoDetalhesConta_sobresaldo img{
+    max-height: 20px;
+    margin: 33px -40px;
+}
+.seçãoDetalhesConta_sobresaldo button{
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px  60px;
+    border-radius: 10px;
+    cursor: pointer;  
+}
+.seçãoDetalhesConta_opçõestransações{
+    display: flex;
+    justify-content: space-between;
+}
+.seçãoDetalhesConta_itemTransação {
+    background-color: #1f6f54;
+    width: 170px;
+    height: 177px;
+    border-radius: 20px;
+    padding: 40px 20px
+}
+.seçãoDetalhesConta_itemTransação img{
+    width: 100%;
+    max-width: 40px;
+}
+.seçãoDetalhesConta_itemTransação p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 25px;
+    max-width: 80px;
+}
+.seçãoTransação{
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 15px solid #f4f4f4;
+    padding: 20px 0;
+}
+.seçãoTransação_avisoSeleção p{
+   font-size:25px;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); 
+   padding: 30px 60px;
+   border-radius: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.15)
+}
+.seçãoTransação_avisoSeleção img{
+    margin: 30px 0 90px;
+    width: 100%;
+}
+.seçãoTransação_qrcode{
+    text-align: center;
+}
+.seçãoTransação_qrcode img {
+    max-width: 100px;
+}
+.seçãoTransação_qrcode p{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.seçãoTransação_qrcode button{
+    background-color: #4a8864;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 50px 0 20px;
+    padding: 15px 150px;
+    cursor: pointer;
+    }
+.seçãoTransação_qrcode a{
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+.seçãoTransação_pix img{
+    width: 100%;
+    max-width: 150px;
+}
+.seçãoTransação_boxOpção {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d2d2d2;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.seçãoTransação_boxOpção img{
+    width: 100%;
+    max-width: 80px;
+    margin: 10px;
+}
+.seçãoTransação_boxOpção p{
+    font-size: 18px;
+    line-height: 20px;
+}
+.seçãoTransação_boleto{}
+
+.seçãoTransação_boleto img{
+    width: 100%;
+    max-width: 80px;
+}
+.seçãoTransação_boleto h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.seçãoTransação_boleto p{
+    font-size: 18px;
+    max-width: 500px;
+    margin: 20px 0;
+}
+.seçãoTransação_boleto input{
+    width: 100%;
+    background-color: #d2d2d2;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    color: #000;
+}
+.seçãoTransação_cobrar{}
+.seçãoTransação_cobrar img{
+    width: 100%;
+    max-width: 60px;
+    }
+.seçãoTransação_cobrar h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.seçãoTransação_cobrar p{
+    font-size: 18px;
+    max-width: 500px;
+    margin: 20px 0;
+   }
+
+.rodapé{
+    background-color: #fff;
+      
+}
+   
+.rodapé_menuPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rodapé_menuPrincipal li{
+    text-align: center;
+}
+.rodapé_menuPrincipal li a{
+    color: #000;
+    text-decoration: none;
+}
+.rodapé_menuPrincipal li a img{
+    width: 100%;
+    max-width: 40px;
+    }
+.rodapé_menuPrincipal li a p{
+    margin-top: 20px;
+}
+.rodapé_menuItem_pagar{
+    transform:translateY(-30px) 
+    }
+.rodapé_menuPrincipal .rodapé_menuItem_pagar a img{
+    max-width: 80px;
+}

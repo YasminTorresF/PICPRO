@@ -5,7 +5,7 @@
         <title> PICPRO </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@1,300&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
@@ -32,27 +32,38 @@
                         <img class="icone2" src="./assets/img/chat.png" alt="chat">
                     </div>
                     <div class="seçãoDetalhesConta_sobresaldo">
-                    <div class="visualizarsaldo">
-                        <P>Saldo PicPay<strong>R$10,00</strong></P>
-                        <img src="./assets/img/visualizar.png" alt="visualizar">
+                    <div>
+                        <P>Saldo PicPay</P>   
+                        <div class="visualizarsaldo">                     
+                            <p>R$10,00</P>
+                            <img src="./assets/img/visualizar.png" alt="visualizar">
+                        </div>
                     </div>    
                     <button>Extrato</button>
                 </div>
                 <ul class="seçãoDetalhesConta_opçõestransações">
-                    <li class="seçãoDetalhesConta_itemTransação">
-                        <img src="./assets/img/qrcode.png" alt="Ícone QR code">
+                    <li class="seçãoDetalhesConta_itemTransação seçãoDetalhesConta_itemTransação--qrcode" id="1">
+                        <figure>
+                            <img src="./assets/img/qrcode.png" alt="Ícone QR code">
+                        </figure>
                         <p>QR code</p>
                     </li>
-                    <li class="seçãoDetalhesConta_itemTransação">
-                        <img src="./assets/img/pix.png" alt="Ícone Pix">
+                    <li class="seçãoDetalhesConta_itemTransação seçãoDetalhesConta_itemTransação--pix" id="2">
+                        <figure>
+                            <img src="./assets/img/pix.png" alt="Ícone Pix">
+                        </figure>
                         <p>Pix</p>
                     </li>
-                    <li class="seçãoDetalhesConta_itemTransação">
-                        <img src="./assets/img/codigo.png" alt="Ícone Boleto">
+                    <li class="seçãoDetalhesConta_itemTransação seçãoDetalhesConta_itemTransação--boleto" id="3">
+                        <figure>
+                            <img src="./assets/img/codigo.png" alt="Ícone Boleto">
+                        </figure>
                         <p>Pagar Boleto</p>
                     </li>
-                    <li class="seçãoDetalhesConta_itemTransação">
-                        <img src="./assets/img/cobrar-icon.png" alt="Ícone Cobrar">
+                    <li class="seçãoDetalhesConta_itemTransação seçãoDetalhesConta_itemTransação--cobrar" id="4">
+                        <figure>
+                            <img src="./assets/img/cobrar-icon.png" alt="Ícone Cobrar">
+                        </figure>
                         <p>Cobrar</p>
                     </li>
                 </ul>
@@ -60,17 +71,17 @@
             </section>
             <section class="seçãoTransação">
                 <div class="container">
-                    <div class="seçãoTransação_avisoSeleção">
+                    <div class="seçãoTransação_avisoSeleção mostrar">
                         <p>Selecione a forma de pagamento</p>
                         <img src="./assets/img/banner.png" alt="Banner picpay">
                     </div>
-                    <div class="seçãoTransação_qrcode">
+                    <div data-id="1" class="seçãoTransação_qrcode">
                         <img src="./assets/img/qrcode-imagem.png" alt="Imagem QR code">
                         <p>@yasmintorres</p>
                         <button>Cobre um amigo</button>
                         <a href="">Compartilhar meu código</a>
                     </div>
-                    <div class="seçãoTransação_pix">
+                    <div data-id="2" class="seçãoTransação_pix">
                         <img src="./assets/img/pix-logo.png" alt="Pix logo">
                         <div class="seçãoTransação_boxOpção">
                             <img src="./assets/img/pix1.png" alt="ícone opção pix">
@@ -82,13 +93,13 @@
                         </div>
  
                     </div>
-                    <div class="seçãoTransação_boleto">
+                    <div data-id="3" class="seçãoTransação_boleto">
                         <img src="./assets/img/boleto.png" alt="Imagem boleto">
                         <h2>Pagar com código de barras</h2>
                         <p>Você pode parcelar em até 12x no cartão ou usar seu saldo em carteira pra pagar à vista </p>
                         <input type="text" placeholder="Insira o código de barras">
                     </div>
-                    <div class="seçãoTransação_cobrar">
+                    <div data-id="4" class="seçãoTransação_cobrar">
                         <img src="./assets/img/cobrar.png" alt="Ícone cobrar">
                         <h2>Cobrar</h2>
                         <p>Divida a conta com os amigos de forma fácil</p>
@@ -139,6 +150,7 @@
                 </div> 
             </footer>
         </main>
-
+        <script src="./assets/js/script.js"></script>
+        
     </BODY>
 </html>

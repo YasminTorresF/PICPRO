@@ -31,12 +31,20 @@ max-width: 140px;
     padding: 60px 0 30px;
 }
 .seçãoDetalhesConta_sobreusuário {
-display: flex;
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+    justify-content: space-between
+
 }
 .icone1 {
     margin-right: 50px;
     margin-left: 450px;
-    max-height: 50px;  
+    max-height: 50px; 
+    cursor: pointer; 
+}
+.icone2 {
+    cursor: pointer; 
 }
 .seçãoDetalhesConta_sobreusuário p {
     font-size: 18px;
@@ -56,23 +64,25 @@ display: flex;
     justify-content: space-between;
     padding: 30px 0;
     align-items: center;
-    margin-top: 30px;
 }
-.visualizarsaldo{
-    display: flex;
-}
+
 .seçãoDetalhesConta_sobresaldo p {
     font-size: 18px;
     line-height: 22px;
 }
-.seçãoDetalhesConta_sobresaldo p strong{
-    margin-top: 10px;
-    display: block;
-    font-weight: 600;
+
+.visualizarsaldo p {
+   font-weight: 600;
 }
-.seçãoDetalhesConta_sobresaldo img{
-    max-height: 20px;
-    margin: 33px -40px;
+.visualizarsaldo {
+    display: flex;
+}
+.visualizarsaldo img {
+    display: block;
+    height: 18px;
+    width:30px;
+    margin-left: 12px;
+    cursor: pointer; 
 }
 .seçãoDetalhesConta_sobresaldo button{
     background-color: #fff;
@@ -92,7 +102,8 @@ display: flex;
     width: 170px;
     height: 177px;
     border-radius: 20px;
-    padding: 40px 20px
+    padding: 40px 20px;
+    cursor: pointer;    
 }
 .seçãoDetalhesConta_itemTransação img{
     width: 100%;
@@ -108,9 +119,18 @@ display: flex;
 .seçãoTransação{
     background-color: #fff;
     border-radius: 20px 20px 0 0;
-    border-bottom: 15px solid #f4f4f4;
-    padding: 20px 0;
+    border-bottom: 15px solid #f0f0f0;
+    padding: 30px 0;
+    min-height: 450px;
 }
+
+.seçãoTransação .container div{
+    display: none
+}
+.seçãoTransação .container div.mostrar{
+    display: block;
+}
+
 .seçãoTransação_avisoSeleção p{
    font-size:25px;
    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); 
@@ -126,10 +146,10 @@ display: flex;
     text-align: center;
 }
 .seçãoTransação_qrcode img {
-    max-width: 100px;
+    max-width: 180px;
 }
 .seçãoTransação_qrcode p{
-    font-size: 10px;
+    font-size: 18px;
     font-weight: bold;
     margin: 20px 0;
 }
@@ -172,7 +192,6 @@ display: flex;
     font-size: 18px;
     line-height: 20px;
 }
-.seçãoTransação_boleto{}
 
 .seçãoTransação_boleto img{
     width: 100%;
@@ -189,17 +208,17 @@ display: flex;
 }
 .seçãoTransação_boleto input{
     width: 100%;
-    background-color: #d2d2d2;
+    background-color: #f4f4f4;
     font-size: 16px;
     height: 50px;
     border-radius: 10px;
     border: 1px solid #d2d2d2;
     color: #000;
 }
-.seçãoTransação_cobrar{}
+
 .seçãoTransação_cobrar img{
     width: 100%;
-    max-width: 60px;
+    max-width: 80px;
     }
 .seçãoTransação_cobrar h2{
     font-size: 20px;
@@ -240,4 +259,64 @@ display: flex;
     }
 .rodapé_menuPrincipal .rodapé_menuItem_pagar a img{
     max-width: 80px;
+}
+
+.seçãoDetalhesConta_itemTransação:hover {
+    background-color: #fff;
+    color: #4a8864;
+  }
+.seçãoDetalhesConta_itemTransação figure {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+.seçãoDetalhesConta_itemTransação--qrcode figure{
+    background-image: url("../img/qrcode.png");
+   
+}
+
+.seçãoDetalhesConta_itemTransação--pix figure{
+    background-image: url("../img/pix.png");
+    
+}
+
+.seçãoDetalhesConta_itemTransação--boleto figure{
+    background-image: url("../img/codigo.png");
+    width: 42px;
+    height: 40px;
+    width: 100%;
+    max-width: 52px;
+    
+}
+
+.seçãoDetalhesConta_itemTransação--cobrar figure{
+    background-image: url("../img/cobrar-icon.png");
+    width: 42px;
+    height: 40px;
+    width: 100%;
+    max-width: 52px;
+}
+.seçãoDetalhesConta_itemTransação--qrcode:hover figure {
+    background-image: url("../img/qrcode-verde.png");
+}
+
+.seçãoDetalhesConta_itemTransação--pix:hover figure {
+    background-image: url("../img/pix-verde.png");
+}
+
+.seçãoDetalhesConta_itemTransação--boleto:hover figure {
+    background-image: url("../img/boleto-verde.png");
+}
+
+.seçãoDetalhesConta_itemTransação--cobrar:hover figure {
+    background-image: url("../img/cobrar-verde.png");
+}
+
+.seçãoDetalhesConta_itemTransação figure img {
+    opacity: 0;
+    width: 100%;
+    max-width: 25px;
+    height: 20px;
 }

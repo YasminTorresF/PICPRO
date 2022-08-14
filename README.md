@@ -5,6 +5,19 @@ Projeto desenvolvido para o evento PicPro ministrado pelos instrutores da Kenzie
 
 ## O projeto
 
+####Clique na imagem para ser direcionado a aplicação.
+<a href="https://yasmintorresf.github.io/PICPRO/">
+  <img src="https://github.com/YasminTorresF/PICPRO/blob/master/projeto-final-picpay.gif?raw=true" />
+</a>
+
+
+## Tecnologias utilizadas
+
+- HTML5;
+- CSS3;
+- JavaScript;
+
+
 ### Estrutura de arquivos
 
 - README.md
